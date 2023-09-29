@@ -1,8 +1,16 @@
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 body {
-    background-color: rgb(255, 214, 98);
+    background-color: #0d1321;
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 
 .container {
@@ -10,6 +18,41 @@ body {
     flex-direction: column;
     align-items: center;
     width: 480px;
+}
+
+.stars {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0;
+    animation: twinkle 10s infinite;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.2;
+        /* start at a dim opacity */
+        transform: translateY(0);
+    }
+
+    10% {
+        opacity: 1;
+        /* become brighter */
+        transform: translateY(0);
+    }
+
+    20% {
+        opacity: 0.2;
+        /* become dimmer again */
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0.2;
+        /* maintain dim opacity */
+        transform: translateY(0);
+    }
 }
 
 #me {
@@ -25,12 +68,17 @@ body {
     padding: 0;
 }
 
+#textBox {
+    color: #eff1f3;
+    ;
+}
+
 p {
     hyphens: auto;
 }
 
 a {
-    color: rgb(0, 83, 156);
+    color: #c5832b;
     text-decoration: none;
 }
 
@@ -40,28 +88,27 @@ button {
     background: none;
     padding: 0;
     border: none;
-    color: rgb(0, 83, 156);
+    color: #c5832b;
     cursor: pointer;
-    transition: color 2s ease-out;
 }
 
 .hidden {
     opacity: 0;
     transform: translateY(100%);
     transition: opacity 0.5s, transform 0.2s;
-  }
-  
-  .visible {
+}
+
+.visible {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 
 footer {
     position: absolute;
     right: 0%;
     bottom: 0%;
     font-size: 13px;
-    color: rgb(0, 83, 156);
+    color: #c5832b;
     padding-right: 10px;
     padding-bottom: 5px;
 }
@@ -72,7 +119,8 @@ screen and (max-height: 480px) {
         width: 440px;
     }
 
-    .links {
+    .links,
+    #textBox {
         width: 440px;
         font-size: 15px;
     }
@@ -88,8 +136,9 @@ screen and (max-height: 440px) {
         width: 400px;
     }
 
-    .links {
-        width: 440px;
+    .links,
+    #textBox {
+        width: 400px;
         font-size: 14px;
     }
 
@@ -104,7 +153,8 @@ screen and (max-height: 400px) {
         width: 360px;
     }
 
-    .links {
+    .links,
+    #textBox {
         width: 360px;
         font-size: 13px;
     }
@@ -114,14 +164,14 @@ screen and (max-height: 400px) {
     }
 }
 
-
 @media screen and (max-width: 360px),
 screen and (max-height: 360px) {
     #me {
         width: 320px;
     }
 
-    .links {
+    .links,
+    #textBox {
         width: 320px;
         font-size: 12px;
     }
@@ -135,6 +185,7 @@ screen and (max-height: 360px) {
 screen and (max-height: 295px) {
 
     .links,
+    #textBox,
     footer {
         display: none;
     }
