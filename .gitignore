@@ -1,0 +1,13 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+
+# Environment files
+.env
+
+# npm package files
+package.json
+package-lock.json
+
+# vim files
+session.vim

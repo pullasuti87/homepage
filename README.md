@@ -1,2 +1,1 @@
-# kotisivu
-voi juku, minun ihka oma kotisivu
+# My personal homepage
