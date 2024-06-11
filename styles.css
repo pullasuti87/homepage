@@ -1,14 +1,10 @@
-html::-webkit-scrollbar {
-    display: none;
-}
 
 html {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    overflow:hidden;
 }
 
 body {
-    background-color: #0d1321;
+    background-color: #ffd662;
     display: flex;
     justify-content: center;
 }
@@ -24,7 +20,7 @@ body {
     position: absolute;
     width: 1px;
     height: 1px;
-    background-color: #fff;
+    background-color: #ffffff;
     opacity: 0;
     animation: twinkle 10s infinite;
 }
@@ -69,7 +65,7 @@ body {
 }
 
 #textBox {
-    color: #eff1f3;
+    color: #00539c;
     ;
 }
 
@@ -78,7 +74,7 @@ p {
 }
 
 a {
-    color: #c5832b;
+    color: #00539c;
     text-decoration: none;
 }
 
@@ -88,7 +84,7 @@ button {
     background: none;
     padding: 0;
     border: none;
-    color: #c5832b;
+    color: #00539c;
     cursor: pointer;
 }
 
@@ -111,6 +107,13 @@ footer {
     color: #c5832b;
     padding-right: 10px;
     padding-bottom: 5px;
+}
+
+
+@media screen and (max-height: 550px) {
+    footer {
+        display:none;
+    }
 }
 
 @media screen and (max-width: 480px),
