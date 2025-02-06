@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="noindex, nofollow">
-        <link rel="stylesheet" href="styles.css">
-        <title>MäkJuhPek</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="styles.css">
+    <title>MäkJuhPek</title>
+</head>
 
-    <body>
-        <div class="container">
-            <div>
-                <img id="me" src="./img/me.png" alt="Hey, where did my picture go?">
-                <ul class="links">
-                    <li><button id="showButton" title="Just Me">About me</button></li>
-                    <li><a href="./pages/cv.html" title="Career Chronicles">CV</a></li>
-                    <li><a href="https://github.com/pullasuti87" title="Byte Buff">Github</a></li>
-                    <li><a href="mailto:makiju@student.jyu.fi" title="Ping
-                            Me!">makiju@student.jyu.fi</a></li>
-                </ul>
-            </div>
-            <div id="textBox" class="hidden">
-                <h2>Juho-Pekka Mäkinen</h2>
-                <p>Space Enthusiast | Sci-Fi Lover</p>
-                <p> With a strong passion for software engineering and technology,
-                I'm an enthusiastic individual eager to kickstart my career in
-                the dynamic field of software development. My educational
-                background and ongoing studies have equipped me with the
-                skills and determination required to excel in this industry.
-                Lines of code are my constellations, and algorithms are my
-                guiding stars.
-                </p>
-            </div>
-
+<body>
+    <div class="container">
+        <div>
+            <img id="me" src="./img/me.png" title="old picture" alt="Hey, where did my picture go?">
+            <ul class="links">
+                <li><button id="show-button" title="Just Me">About me</button></li>
+                <li><a href="./pages/cv.html" title="Career Chronicles">CV</a></li>
+                <li><a href="https://github.com/pullasuti87" title="Byte Buff">Github</a></li>
+                <li><a href="mailto:makiju@jyu.fi" title="Ping Me!">makiju@jyu.fi</a></li>
+            </ul>
         </div>
-        <footer class="footer"></footer>
-        <script src="script.js"></script>
-    </body>
+        <div id="text-box">
+            <div class="hidden" id="about-me">
+                <h2>J-P Mäkinen</h2>
+                <p class="divider"> | </p>
+                <p>Sci-Fi Lover</p>
+            </div>
+            <p class="hidden" id="about-me-text">
+                CS student who spends way too much time watching the
+                same old episodes of my favorite Star Trek series. I'm
+                talking about the old ones, not this 2009s Kelvin timeline
+                crap (although ST Beyond was okay).
+            </p>
+        </div>
+
+    </div>
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+</body>
 
 </html>
