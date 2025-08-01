@@ -1,4 +1,4 @@
-const updated = '7/2/2025';
+const updated = '1/8/2025';
 const starsOn = false;
 
 window.onload = function () {

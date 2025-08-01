@@ -53,6 +53,7 @@ body {
 }
 
 #me {
+  margin-top: 5px;
   width: 480px;
   border-radius: 2%;
 }
