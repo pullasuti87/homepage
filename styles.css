@@ -57,9 +57,11 @@ body {
   width: 480px;
   border-radius: 2%;
 }
+
 #text-box {
   color: #00539c;
   display: none;
+  font-size: 18px;
 }
 
 #about-me {
@@ -89,11 +91,12 @@ body {
 a {
   color: #00539c;
   text-decoration: none;
+  font-size: 18px;
 }
 
 button {
   font-family: inherit;
-  font-size: inherit;
+  font-size: 18px;
   background: none;
   border: none;
   color: #00539c;
@@ -135,7 +138,6 @@ footer {
   .links,
   #text-box {
     width: 440px;
-    font-size: 15px;
   }
 
   footer {
@@ -151,7 +153,6 @@ footer {
   .links,
   #text-box {
     width: 400px;
-    font-size: 14px;
   }
 
   footer {
@@ -167,7 +168,6 @@ footer {
   .links,
   #text-box {
     width: 360px;
-    font-size: 13px;
   }
 
   footer {
@@ -183,7 +183,6 @@ footer {
   .links,
   #text-box {
     width: 320px;
-    font-size: 12px;
   }
 
   footer {
@@ -195,6 +194,7 @@ footer {
   .container {
     min-width: 320px;
   }
+
   footer {
     display: none;
   }

@@ -1,7 +1,3 @@
-- FileZilla
-- makiju@halava.cc.jyu.fi
-- /autowebhome/home/makiju/.htusers
-
 # Salasanasuojaus
 
 Yksittäinen kansio ja sen alikansiot on helppo suojata salasanalla.
